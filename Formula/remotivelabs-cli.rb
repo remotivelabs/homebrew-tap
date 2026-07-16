@@ -1,7 +1,7 @@
 # Template for the Homebrew formula published to remotivelabs/homebrew-tap.
 # The `publish-homebrew` job in .github/workflows/cli-release.yaml renders this
 # by substituting the @@TOKENS@@ below and pushes the result to
-# homebrew-tap/Formula/remotive-cli.rb.
+# homebrew-tap/Formula/remotivelabs-cli.rb.
 #
 #   0.23.6       CLI version, e.g. 0.23.1
 #   beamy-public-releases        public GCS bucket name (vars.RELEASE_BUCKET)
@@ -9,7 +9,7 @@
 #
 # The bundle ships its own CPython, so the formula has no Python dependency and
 # just symlinks the `remotive` wrapper into the Homebrew prefix.
-class RemotiveCli < Formula
+class RemotivelabsCli < Formula
   desc "CLI for operating RemotiveCloud and RemotiveBroker"
   homepage "https://github.com/remotivelabs/remotivelabs-cli"
   # version is scanned from the URL (0.23.6) — do not set it explicitly.
