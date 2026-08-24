@@ -3,14 +3,14 @@
 # renders this by substituting the @@TOKENS@@ and pushes the result to
 # homebrew-tap/Casks/remotive-studio-desktop.rb.
 #
-#   0.0.48      app version, e.g. 0.0.41
-#   9c3641df8f06d6ecd589d967755adafc582c6493dfa817909136778e173346c6    sha256 of the arm64 DMG
+#   0.0.49      app version, e.g. 0.0.41
+#   e66507dae959f0cefe9397171e87f6a7228c07ba67f1dff7c6b84dbab4e69705    sha256 of the arm64 DMG
 #
 # The DMG is Developer ID signed and notarized, so Gatekeeper accepts the
 # installed app without a quarantine exception.
 cask "remotive-studio-desktop" do
-  version "0.0.48"
-  sha256 "9c3641df8f06d6ecd589d967755adafc582c6493dfa817909136778e173346c6"
+  version "0.0.49"
+  sha256 "e66507dae959f0cefe9397171e87f6a7228c07ba67f1dff7c6b84dbab4e69705"
 
   url "https://releases.beamylabs.com/remotive-studio-desktop/remotive-studio-desktop-#{version}/RemotiveStudio-#{version}-arm64.dmg",
       verified: "releases.beamylabs.com/remotive-studio-desktop/"
