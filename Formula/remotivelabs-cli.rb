@@ -3,23 +3,23 @@
 # by substituting the @@TOKENS@@ below and pushes the result to
 # homebrew-tap/Formula/remotivelabs-cli.rb.
 #
-#   0.27.1       CLI version, e.g. 0.23.1
+#   0.27.2       CLI version, e.g. 0.23.1
 #   beamy-public-releases        public GCS bucket name (vars.RELEASE_BUCKET)
-#   99dac169806447be9a2d71506b11b1b80f2bd51706ddb9e1d621db96e699ca20     sha256 of the arm64-darwin bundle
+#   0137706b69b7c8c37f71f45a6245e24972541bce127f2533523f829875c5bd57     sha256 of the arm64-darwin bundle
 #
 # The bundle ships its own CPython, so the formula has no Python dependency and
 # just symlinks the `remotive` wrapper into the Homebrew prefix.
 class RemotivelabsCli < Formula
   desc "CLI for operating RemotiveCloud and RemotiveBroker"
   homepage "https://github.com/remotivelabs/remotivelabs-cli"
-  # version is scanned from the URL (0.27.1) — do not set it explicitly.
+  # version is scanned from the URL (0.27.2) — do not set it explicitly.
   license :cannot_represent # proprietary — see LICENSE
 
   # Apple Silicon (arm64) only — no Intel/x86_64 macOS build is published.
   on_macos do
     on_arm do
-      url "https://storage.googleapis.com/beamy-public-releases/remotivelabs-cli/0.27.1/remotivelabs-cli-0.27.1-arm64-darwin.tar.gz"
-      sha256 "99dac169806447be9a2d71506b11b1b80f2bd51706ddb9e1d621db96e699ca20"
+      url "https://storage.googleapis.com/beamy-public-releases/remotivelabs-cli/0.27.2/remotivelabs-cli-0.27.2-arm64-darwin.tar.gz"
+      sha256 "0137706b69b7c8c37f71f45a6245e24972541bce127f2533523f829875c5bd57"
     end
   end
 
