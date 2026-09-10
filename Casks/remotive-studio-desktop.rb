@@ -12,8 +12,7 @@ cask "remotive-studio-desktop" do
   version "0.0.49"
   sha256 "e66507dae959f0cefe9397171e87f6a7228c07ba67f1dff7c6b84dbab4e69705"
 
-  url "https://releases.beamylabs.com/remotive-studio-desktop/remotive-studio-desktop-#{version}/RemotiveStudio-#{version}-arm64.dmg",
-      verified: "releases.beamylabs.com/remotive-studio-desktop/"
+  url "https://releases.beamylabs.com/remotive-studio-desktop/remotive-studio-desktop-#{version}/RemotiveStudio-#{version}-arm64.dmg"
   name "RemotiveStudio"
   desc "Desktop app for RemotiveStudio, the RemotiveLabs recording workspace"
   homepage "https://remotivelabs.com/"
