@@ -3,9 +3,9 @@
 # renders this by substituting the @@TOKENS@@ below and pushes the result to
 # homebrew-tap/Formula/remotive-toolchain-manager.rb.
 #
-#   0.0.20       Toolchain Manager version, e.g. 0.0.16
+#   0.0.21       Toolchain Manager version, e.g. 0.0.16
 #   beamy-public-releases        public GCS bucket name (vars.RELEASE_BUCKET)
-#   20a8d740b3940cbd807d12e821c46833948896399b542df00c030081c4b06fe2     sha256 of the arm64-darwin archive
+#   07eca5e4a38daefc84d914988f968c9f004d7fddff6399a4a050a3e614d45be3     sha256 of the arm64-darwin archive
 #
 # The archive holds the Toolchain Manager (one signed, static binary), and no man
 # page: `remotive toolchain --manual` is its manual. The RemotiveCLI versions it runs
@@ -13,7 +13,7 @@
 class RemotiveToolchainManager < Formula
   desc "Installs and runs the RemotiveCLI version a workspace asks for"
   homepage "https://github.com/remotivelabs/remotivelabs-cli"
-  # version is scanned from the URL (0.0.20) — do not set it explicitly.
+  # version is scanned from the URL (0.0.21) — do not set it explicitly.
   license :cannot_represent # proprietary — see LICENSE
 
   # RemotiveCLI also installs `remotive`: only one of the two can be installed
@@ -22,8 +22,8 @@ class RemotiveToolchainManager < Formula
   # Apple Silicon (arm64) only, as RemotiveCLI
   on_macos do
     on_arm do
-      url "https://storage.googleapis.com/beamy-public-releases/remotive-toolchain-manager/0.0.20/remotive-toolchain-manager-0.0.20-arm64-darwin.tar.gz"
-      sha256 "20a8d740b3940cbd807d12e821c46833948896399b542df00c030081c4b06fe2"
+      url "https://storage.googleapis.com/beamy-public-releases/remotive-toolchain-manager/0.0.21/remotive-toolchain-manager-0.0.21-arm64-darwin.tar.gz"
+      sha256 "07eca5e4a38daefc84d914988f968c9f004d7fddff6399a4a050a3e614d45be3"
     end
   end
 
